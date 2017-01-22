@@ -1,0 +1,41 @@
+- Class: meta
+  Course: Data Mining 
+  Lesson: Introduction 
+  Author: Darren Redmond
+  Type: Standard
+  Organization:  
+  Version: 1.0.0
+
+- Class: video 
+  Output: In this lesson we will watch an introduction to Data Mining video first
+  VideoLink: https://media.heanet.ie/page/7a30279ce3635789b0213b2fe5f3edd6
+
+- Class: mult_question
+  Output: "We have noticed that:
+      whole milk appears in       2513 transactions (25.6%).
+      other vegetables appears in 1903 transactions (19.3%).
+      whole milk and other vegetables appear together in 736 transactions (7.5%).
+    Do they appear together more or less than we might expect?"
+  AnswerChoices: more; less; equal 
+  CorrectAnswer: more 
+  AnswerTests: word=support and confidence
+  Hint: Together they appear in 736 transactions - i.e. 38.7% of other vegetable transactions but this is normally 19.3%.
+
+- Class: text
+  Output: "Normally other vegetables occur in 19.3% of transactions but when whole milk has already occurred it appears to occur more frequently."
+
+- Class: video 
+  Output: Next we will look at some probability
+  VideoLink: https://media.heanet.ie/page/057ccae952bd4dd07707f64269446906
+
+- Class: video 
+  Output: Next we will look at some Frechet Bounds and 2 way table 
+  VideoLink: https://media.heanet.ie/page/00cd9d01eb43c96e62eda4801ad29399
+
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: dbs_on_demand()
+  Hint: ""
