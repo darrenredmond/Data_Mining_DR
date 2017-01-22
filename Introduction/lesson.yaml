@@ -35,9 +35,7 @@
   AnswerTests: omnitest(correctVal='P(A ∩ B) ≤ min{P(A), P(B)}')
 
 - Class: mult_question
-  Output: "Suppose that in a physiotherapy clinic patients have the following symptom probabilities:
-      P{Back Pain} = 0.63. P{Leg Pain} = 0.43. What is the: maximum possible value for P{Back Pain, Leg Pain}?
-      minimum possible value for P{Back Pain, Leg Pain}? the value of P{Back Pain, Leg Pain} if the symptoms are independent?"
+  Output: "Suppose that in a physiotherapy clinic patients have the following symptom probabilities: P{Back Pain} = 0.63. P{Leg Pain} = 0.43. What is the: maximum possible value for P{Back Pain, Leg Pain}? minimum possible value for P{Back Pain, Leg Pain}? the value of P{Back Pain, Leg Pain} if the symptoms are independent?"
   AnswerChoices: 0.43, 0, 0.27; 0.63, 0, 0.27; 0.43, 0, 0.43
   CorrectAnswer: 0.43, 0, 0.27 
   AnswerTests: omnitest(correctVal='0.43, 0, 0.27')
