@@ -44,7 +44,7 @@ dbs_on_demand <- function(){
     if(respone$status_code >= 200 && respone$status_code < 300){
       message("Grade submission succeeded!")
     } else {
-      message(response)
+      message(respone)
       message("Grade submission failed.")
       message("Press ESC if you want to exit this lesson and you")
       message("want to try to submit your grade at a later time.")
