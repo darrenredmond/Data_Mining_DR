@@ -18,6 +18,7 @@
     Do they appear together more or less than we might expect?"
   AnswerChoices: more; less; equal 
   CorrectAnswer: more 
+  AnswerTests: omnitest(correctVal='more')
   Hint: Together they appear in 736 transactions - i.e. 38.7% of other vegetable transactions but this is normally 19.3%.
 
 - Class: text
