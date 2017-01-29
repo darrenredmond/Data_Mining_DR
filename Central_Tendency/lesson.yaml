@@ -7,8 +7,37 @@
   Version: 1.0.0
 
 - Class: text
-  Output: In this lesson we will simply ensure that you can connect to the DBS Data Projects results
-    services and validate that you can submit. Please answer Yes to the next question.
+  Output: "In this lesson we will simply ensure that you can connect to the DBS Data Projects results
+    services and validate that you can submit. Please answer Yes to the next question."
+
+- Class: text
+  Output: "Today, I'll be teaching you the basics of data analysis. It probably makes
+    sense to start by defining the word DATA."
+
+- Class: text
+  Output: 'According to Wikipedia, "Data are values of qualitative or quantitative
+    variables, belonging to a set of items."'
+
+- Class: text
+  Output: 'Often the "set of items" that we are interested in studying is referred
+    to as the POPULATION. Data analysis usually involves studying a subset, or SAMPLE,
+    of an entire population.'
+
+- Class: figure
+  Output: Here is a diagram showing the relationship between a population and a sample.
+  Figure: mod1_pop_vs_samp.R
+  FigureType: new
+
+- Class: text
+  Output: 'Data analysis should always start with a specific question of interest.
+    For example, we might ask "What percentage of people living in the United States
+    are over six feet tall?"'
+
+- Class: text
+  Output: "Here, our population of interest is everyone living in the US. Since it's
+    impractical to measure the heights of over 300 million people, we could instead
+    choose 100 people at random and measure their heights. Our hope would be that
+    this sample of 100 people is REPRESENTATIVE of the entire US population."
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
