@@ -94,13 +94,13 @@
 #  Hint: "These are the three different methods  stated above that are used for describing
 #    the center of a data set."
 
-#- Class: cmd_question
-#  Output: "To illustrate these concepts, we will now look at a real dataset from the
-#    'openintro' R package, which has already been loaded for you. Type 'cars' and
-#    press Enter to see the dataset we'll be working with."
-#  CorrectAnswer: cars
-#  AnswerTests: equivalent=cars
-#  Hint: "Type 'cars' and press Enter. Do not use quotes, spaces, or uppercase letters."
+- Class: cmd_question
+  Output: "To illustrate these concepts, we will now look at a real dataset from the
+    'openintro' R package, which has already been loaded for you. Type 'cars' and
+    press Enter to see the dataset we'll be working with."
+  CorrectAnswer: cars
+  AnswerTests: equivalent=cars
+  Hint: "Type 'cars' and press Enter. Do not use quotes, spaces, or uppercase letters."
 
 - Class: text
   Output: "You'll notice the rows are numbered 1 through 54, each representing exactly
