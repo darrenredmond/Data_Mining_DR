@@ -39,6 +39,18 @@
     choose 100 people at random and measure their heights. Our hope would be that
     this sample of 100 people is REPRESENTATIVE of the entire US population."
 
+#- Class: mult_question
+#  Output: "Let''s quickly test your understanding of the term REPRESENTATIVE. If you
+#    were interested in studying the health of men living in the US, ages 18-25, which
+#    sample would be more representative of the target population: a sample of 50 men
+#    who live in a nearby retirement home, or a sample of 50 men who are students at
+#    a local university?"
+#  AnswerChoices: Men living at the retirement home; College students
+#  CorrectAnswer: 'College students'
+#  AnswerTests: word= 'College students'
+#  Hint: "Since your target population is all men ages 18-25 living in the US, which
+#    of these 2 sample populations more closely matches the population of interest?"
+
 - Class: video
   Output: "Would you like to watch a video on these topics now?"
   VideoLink: http://youtu.be/sRArT81TVEM
@@ -65,6 +77,49 @@
 - Class: video
   Output: "Would you like to watch a brief video on mean, median, and mode?"
   VideoLink: http://youtu.be/h8EYEJ32oQ8
+
+#- Class: mult_question
+#  Output: "Mean, median, and mode are all measures of ____________."
+#  AnswerChoices: variation; significance; deviation; central tendency
+#  CorrectAnswer: central tendency
+#  AnswerTests: word=central tendency
+#  Hint: 'This is a fancy term for the "middle" of a dataset.'
+
+#- Class: mult_question
+#  Output: "Which of the following terms are of most importance when describing the
+#    central tendency of a data set?"
+#  AnswerChoices: median, mode, range; statistics, population, mode; population, sample, representative; mode, median, mean
+#  CorrectAnswer: mode, median, mean
+#  AnswerTests: word= mode, median, mean
+#  Hint: "These are the three different methods  stated above that are used for describing
+#    the center of a data set."
+
+#- Class: cmd_question
+#  Output: "To illustrate these concepts, we will now look at a real dataset from the
+#    'openintro' R package, which has already been loaded for you. Type 'cars' and
+#    press Enter to see the dataset we'll be working with."
+#  CorrectAnswer: cars
+#  AnswerTests: equivalent=cars
+#  Hint: "Type 'cars' and press Enter. Do not use quotes, spaces, or uppercase letters."
+
+- Class: text
+  Output: "You'll notice the rows are numbered 1 through 54, each representing exactly
+    one car in the dataset. For each car, the following VARIABLES, or characteristics,
+    are reported: 'type' (small, midsize, large), 'price' (USD), 'mpgCity' (city
+    miles per gallon), 'driveTrain' (4WD, front, rear), 'passengers' (total capacity),
+    and 'weight' (lbs)."
+
+- Class: text
+  Output: "We'll be focusing on the 'mpgCity' variable in this lesson. For simplicity,
+    let's extract it from our dataset and store it in a new variable."
+
+- Class: cmd_question
+  Output: "Access the 'mpgCity' variable from the 'cars' dataset using the 'dataset$variable'
+    notation."
+  CorrectAnswer: cars$mpgCity
+  AnswerTests: equivalent=cars$mpgCity
+  Hint: "Use 'dataset$variable' notation. Remember the name of our dataset is 'cars'
+    and the name of the variable we are interested in is 'mpgCity'."
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
