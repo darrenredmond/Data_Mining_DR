@@ -121,6 +121,84 @@
   Hint: "Use 'dataset$variable' notation. Remember the name of our dataset is 'cars'
     and the name of the variable we are interested in is 'mpgCity'."
 
+- Class: cmd_question
+  Output: "Now store the contents of the 'cars$mpgCity' in a new variable called 'myMPG'."
+  CorrectAnswer: myMPG <- cars$mpgCity
+  AnswerTests: newcmd=myMPG <- cars$mpgCity
+  Hint: "Use the assignment operator to assign 'cars$mpgCity' to a new variable called
+    'myMPG'."
+
+- Class: text
+  Output: "The ARITHMETIC MEAN, or simply the MEAN or AVERAGE, is the most common measurement
+    of central tendency. To calculate the mean of a dataset, you first sum all of
+    the values and then divide that sum by the total number of values in the dataset."
+
+- Class: text
+  Output: "However, when there are many values of interest, it becomes tedious to do
+    this calculation by hand. Luckily, R has a built-in function for computing the
+    mean. The syntax for doing so is 'mean(variable)'."
+
+- Class: cmd_question
+  Output: "Compute the mean value for the 'myMPG' variable now."
+  CorrectAnswer: mean(myMPG)
+  AnswerTests: newcmd=mean(myMPG)
+  Hint: "Use the 'mean' function by typing 'mean' followed by the name of your variable
+    placed in parentheses. Don't use any spaces."
+
+- Class: text
+  Output: "Extreme values in our dataset can have a significant influence on the mean.
+    For instance, if there was a car in our dataset that got 200 miles per gallon,
+    this would inflate the mean upwards. This could be misleading since none of the
+    other cars get anywhere near this gas mileage."
+
+- Class: text
+  Output: "An alternative to the mean, which is not influenced at all by extreme values,
+    is the MEDIAN. The median is computed by sorting all values from least to greatest
+    and then selecting the middle value. If there is an even number of values, then
+    there are actually 2 middle values. In this case, the MEDIAN is equal to the MEAN
+    of the 2 middle values. Don't worry if this is a little confusing. It will become
+    more clear with practice."
+
+- Class: cmd_question
+  Output: "R also has a function for computing the median of a dataset and this is
+    done by typing 'median(variable)'. Find the median value of your 'myMPG' variable
+    now."
+  CorrectAnswer: median(myMPG)
+  AnswerTests: newcmd=median(myMPG)
+  Hint: "Use the 'median' function by typing 'median' followed by the name of your
+    variable placed in parentheses. Don't use any spaces."
+
+- Class: text
+  Output: "Finally, we may be most interested in finding the value that shows up the
+    most in our dataset. In other words, what is the most common value in our dataset?
+    This is called the MODE and it is found by counting the number of times that each
+    value appears in the dataset and selecting the most frequent value."
+
+- Class: cmd_question
+  Output: "Use the 'table' function to see how many times each value appears for your
+    'myMPG' variable. The syntax for this function is the same as for the others you've
+    seen."
+  CorrectAnswer: table(myMPG)
+  AnswerTests: newcmd=table(myMPG)
+  Hint: "Type 'table' followed by your variable name placed in parentheses. As usual,
+    leave out the spaces."
+
+- Class: exact_question
+  Output: "Look at your table for the 'myMPG' variable that you created above. The
+    first row gives you the value of your variable and the second row gives you the
+    number of times it appears in your dataset. Since the mode is the value of our
+    variable that appears most frequently, what is the mode of your 'myMPG' variable?"
+  CorrectAnswer: '19'
+  AnswerTests: exact=19
+  Hint: "Keep in mind that the mode is the value of the variable that is most common,
+    NOT the number of times which it appears."
+
+- Class: text
+  Output: 'Congratulations! You''ve made it through your first lesson. We introduced
+    basic concepts related to data and data analysis. Specifically, you learned three
+    important measures of central tendency: mean, median, and mode. You also know
+    how to compute these using R.'
+
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
   CorrectAnswer: NULL
