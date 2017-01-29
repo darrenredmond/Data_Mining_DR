@@ -1,3 +1,6 @@
+if (!require("plotrix")) install.packages("plotrix")
+library(plotrix)
+
 plot(0,xlim=c(-10,10),ylim=c(-10,10),type="n",xlab="",ylab="",bty="n",xaxt="n",yaxt="n", main="Population vs. Sample")
 draw.circle(0,0,7,border="black",col="yellow")
 draw.circle(3,0,3,border="black",col="red")
