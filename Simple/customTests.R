@@ -1,5 +1,3 @@
-COURSE <- 'dm_simple'
-
 # Get the swirl state
 getState <- function(){
   # Whenever swirl is running, its callback is at the top of its call stack.
@@ -18,6 +16,8 @@ getExpr <- function(){
   getState()$expr
 }
 
+COURSE <- 'dm_simple'
+
 loadDigest <- function(){
   if (!require("digest")) install.packages("digest")
   library(digest)
@@ -27,24 +27,17 @@ dbs_on_demand <- function(){
   loadDigest()
   selection <- getState()$val
   if(selection == "Yes"){
-    course <- COURSE 
+    course <- COURSE
     email <- readline("What is your email address? ")
     student_number <- readline("What is your student number? ")
     hash <- digest(paste(course, student_number), "md5", serialize = FALSE)
 
-    payload <- sprintf('{
-      "course": "%s",
-      "email": "%s",
-      "student_number": "%s",
-      "hash": "%s",
-    }', course, email, student_number, hash)
-    url <- paste('http:///results.dbsdataprojects.com/course_results/submit')
+    url <- paste('http:///results.dbsdataprojects.com/course_results/submit?course=', course, '&hash=', hash, '&email=', email, '&student_number=', student_number, sep='')
 
-    respone <- httr::POST(url, body = payload)
+    respone <- httr::GET(url)
     if(respone$status_code >= 200 && respone$status_code < 300){
       message("Grade submission succeeded!")
     } else {
-      message(respone)
       message("Grade submission failed.")
       message("Press ESC if you want to exit this lesson and you")
       message("want to try to submit your grade at a later time.")
