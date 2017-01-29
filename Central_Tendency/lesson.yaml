@@ -1,19 +1,14 @@
-
 - Class: meta
-  Course: Data Analysis
-  Lesson: Central Tendency
-  Author: Nick Carchedi
+  Course: Data Mining 
+  Lesson: Simple 
+  Author: Darren Redmond
   Type: Standard
-  Organization: JHU Biostatistics
+  Organization: Dublin Business School 
   Version: 1.0.0
 
 - Class: text
-  Output: Today, I'll be teaching you the basics of data analysis. It probably makes
-    sense to start by defining the word DATA.
-
-- Class: text
-  Output: According to Wikipedia, "Data are values of qualitative or quantitative
-    variables, belonging to a set of items."
+  Output: In this lesson we will simply ensure that you can connect to the DBS Data Projects results
+    services and validate that you can submit. Please answer Yes to the next question.
 
 - Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"

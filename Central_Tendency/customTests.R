@@ -16,6 +16,8 @@ getExpr <- function(){
   getState()$expr
 }
 
+COURSE <- 'dm_central_tendency'
+
 loadDigest <- function(){
   if (!require("digest")) install.packages("digest")
   library(digest)
@@ -25,10 +27,11 @@ dbs_on_demand <- function(){
   loadDigest()
   selection <- getState()$val
   if(selection == "Yes"){
-    course <- "dm_centra_tendency"
+    course <- COURSE
     email <- readline("What is your email address? ")
     student_number <- readline("What is your student number? ")
     hash <- digest(paste(course, student_number), "md5", serialize = FALSE)
+
     url <- paste('http:///results.dbsdataprojects.com/course_results/submit?course=', course, '&hash=', hash, '&email=', email, '&student_number=', student_number, sep='')
 
     respone <- httr::GET(url)
@@ -43,4 +46,3 @@ dbs_on_demand <- function(){
   }
   TRUE
 }
-
