@@ -1,0 +1,23 @@
+
+- Class: meta
+  Course: Data Analysis
+  Lesson: Central Tendency
+  Author: Nick Carchedi
+  Type: Standard
+  Organization: JHU Biostatistics
+  Version: 1.0.0
+
+- Class: text
+  Output: Today, I'll be teaching you the basics of data analysis. It probably makes
+    sense to start by defining the word DATA.
+
+- Class: text
+  Output: According to Wikipedia, "Data are values of qualitative or quantitative
+    variables, belonging to a set of items."
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: dbs_on_demand()
+  Hint: ""
