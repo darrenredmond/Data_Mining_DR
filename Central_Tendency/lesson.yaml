@@ -40,6 +40,45 @@
     this sample of 100 people is REPRESENTATIVE of the entire US population."
 
 - Class: mult_question
+  Output: "Let''s quickly test your understanding of the term REPRESENTATIVE. If you
+    were interested in studying the health of men living in the US, ages 18-25, which
+    sample would be more representative of the target population: a sample of 50 men
+    who live in a nearby retirement home, or a sample of 50 men who are students at
+    a local university?"
+  AnswerChoices: Men living at the retirement home; College students
+  CorrectAnswer: College students
+  AnswerTests: word= College students
+  Hint: "Since your target population is all men ages 18-25 living in the US, which
+    of these 2 sample populations more closely matches the population of interest?"
+
+- Class: video
+  Output: "Would you like to watch a video on these topics now?"
+  VideoLink: http://youtu.be/sRArT81TVEM
+
+- Class: text
+  Output: "The purpose of analyzing a sample is to draw conclusions about the population
+    from which the sample was selected. This is called INFERENCE and is the primary
+    goal of INFERENTIAL STATISTICS."
+
+- Class: text
+  Output: "In order to make any inferences about the population, we first need to describe
+    the sample. This is the primary goal of DESCRIPTIVE STATISTICS."
+
+- Class: text
+  Output: "If we want to describe our sample using just one number, how would we best
+    do it? A good start is to find the center, the middle, or the most common element
+    of our data. Statisticians call this the CENTRAL TENDENCY."
+
+- Class: text
+  Output: "There are three different methods for finding such a number and the applicability
+    of each method depends on the situation. Those three methods are called the MEAN,
+    MEDIAN, and MODE."
+
+- Class: video
+  Output: "Would you like to watch a brief video on mean, median, and mode?"
+  VideoLink: http://youtu.be/h8EYEJ32oQ8
+
+- Class: mult_question
   Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
   CorrectAnswer: NULL
   AnswerChoices: Yes;No
