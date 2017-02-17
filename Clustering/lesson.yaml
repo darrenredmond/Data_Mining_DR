@@ -1,0 +1,34 @@
+- Class: meta
+  Course: Data Mining 
+  Lesson: Clustering
+  Author: Darren Redmond
+  Type: Standard
+  Organization:  
+  Version: 1.0.0
+
+- Class: video
+  Output: In this lesson we will watch an introduction to Clustering video first
+  VideoLink: http://media.heanet.ie/page/99874714651e46f4a99ffa2672a8e29f
+
+- Class: video
+  Output: Next we will look at some More K-Means videos
+  VideoLink: http://media.heanet.ie/page/3fbf12c48183491198ab36ceaf341199
+
+- Class: video
+  Output: Next we will look at the details of the K-Means
+  VideoLink: http://media.heanet.ie/page/7b347e042a5e41749648136ee28d957b
+
+- Class: video 
+  Output: Next we will look at some K-Means Alternatives
+  VideoLink: http://media.heanet.ie/page/695d7bef17f74324b40962e264d0138d
+
+- Class: video
+  Output: Next we will look at Assessing Clustering
+  VideoLink: https://media.heanet.ie/page/7ef5c610af1f13b450f7d7f20fa938ab
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: dbs_on_demand()
+  Hint: ""
