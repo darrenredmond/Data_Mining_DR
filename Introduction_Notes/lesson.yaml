@@ -6,7 +6,68 @@
   Organization:  
   Version: 1.0.0
 
+- Class: text
+  Output: "Statistical Data Mining"
+
+- Class: text
+  Output: "Lectures:
+      Online lectures will be posted on blackboard.
+      Copies without audio will also be posted."
+
+- Class: text
+  Output: "Practicals:
+      Online lab notes will be posted on blackboard.
+      Some computer examples will be added to lectures too.
+      Each practical will have a short data mining assignment."
+
+- Class: text
+  Output: "Notes/Overheads
+      I will place copies of lecture slides on blackboard for each class.
+      I will have extra worked examples throughout the course."
+
+- Class: text
+  Output: "Assessment:
+      Continuous Assessment (20%) of the overall course grade.
+      Project (20%) of the overall course grade.
+      Final exam (60%) of the overall course grade."
+
+- Class: text
+  Output: "Module overview"
+
+- Class: text
+  Output: "The course involves:
+      Data Mining, Association rules, Clustering methods, Classification trees, Ensemble methods,
+      Modern Regression, Random Forests, Boosting, Support vector machines, Topic modeling."
+
+- Class: text
+  Output: "What is data mining?
+      Data mining is the process of discovering patterns and structure in large data sets.
+      Data mining uses methods and techniques from statistics, computer science and machine learning.
+      Large scale data mining is a skill in high demand."
+
 - Class: video
+  Output: Statistics Dream Job of the Decade
+  VideoLink: http://www.youtube.com/watch?v=D4FQsYTbLoI
+
+- Class: text
+  Output: "Business applications examples:
+      Help companies intelligently organize and nd information
+      Credit scoring
+      Predict purchasing behavior
+      Recommend products/services
+      Develop trading strategies"
+
+- Class: text
+  Output: "Scientific applications:
+      Predict disease occurrence
+      Find predictive data features
+      Simplify high volume data"
+
+- Class: text
+  Output: "Very similar to multivariate analysis but is more exploratory.
+      Emphasis on developing predictions from data"
+
+- Class: video 
   Output: In this lesson we will watch an introduction to Data Mining video first
   VideoLink: https://media.heanet.ie/page/7a30279ce3635789b0213b2fe5f3edd6
 

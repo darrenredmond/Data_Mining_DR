@@ -1,0 +1,34 @@
+- Class: meta
+  Course: Data Mining 
+  Lesson: Association Rules
+  Author: Darren Redmond
+  Type: Standard
+  Organization:  
+  Version: 1.0.0
+
+- Class: video
+  Output: In this lesson we will watch an introduction to Association Rules video first
+  VideoLink: http://media.heanet.ie/page/22394904952e4c6098b3e20d6cb3213d
+
+- Class: video
+  Output: Next we will look at some Lift examples
+  VideoLink: http://media.heanet.ie/page/f8d6d44e2d574b688c58fe67f351864c
+
+- Class: video
+  Output: Next we will look at some A Priori Algorithm
+  VideoLink: http://media.heanet.ie/page/6750c35f315f45bc8dfd778e6bb93c44
+
+- Class: video 
+  Output: Next we will look at a screen grab of the last lecture
+  VideoLink: http://media.heanet.ie/page/a08f8849d023472fa05c6e323e5c087d
+
+- Class: video
+  Output: Next we will look at some more A Priori investigations
+  VideoLink: https://media.heanet.ie/page/b7bcbdad340d36b54d21ecbb36fffcfa
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on dbsdataprojects.com?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: dbs_on_demand()
+  Hint: ""
